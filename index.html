@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zubair for AMUSU Cabinet Member</title>
+    <!-- Tailwind CSS for styling -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts for typography -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <!-- FontAwesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        heading: ['Montserrat', 'sans-serif'],
+                    },
+                    colors: {
+                        brand: {
+                            maroon: '#800000', // Traditional AMU Maroon
+                            yellow: '#FFD700', // Bright Yellow for high contrast
+                            light: '#FAFAFA'   // Clean Off-white
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        /* Custom styles for elements not easily handled by basic Tailwind */
+        .clip-diagonal {
+            clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
+        }
+        /* Hide the default disclosure triangle on agenda items (Safari) */
+        summary::-webkit-details-marker { display: none; }
+    </style>
+</head>
+<body class="bg-brand-light text-slate-800 font-sans antialiased selection:bg-brand-yellow selection:text-brand-maroon">
+
+    <!-- Navigation (Bright Yellow Background, Maroon Text) -->
+    <nav class="fixed w-full bg-brand-yellow z-50 text-brand-maroon shadow-md border-b border-yellow-400">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-20">
+                <div class="flex-shrink-0">
+                    <a href="#" class="font-heading font-extrabold text-3xl tracking-wider text-brand-maroon">ZUBAIR<span class="text-brand-maroon text-xl uppercase tracking-normal font-bold"> for Cabinet</span></a>
+                </div>
+                <div class="hidden md:block">
+                    <div class="ml-10 flex items-baseline space-x-8">
+                        <a href="#about" class="hover:text-black transition-colors px-3 py-2 rounded-md text-sm font-bold uppercase tracking-wider">About</a>
+                        <a href="#agenda" class="hover:text-black transition-colors px-3 py-2 rounded-md text-sm font-bold uppercase tracking-wider">Agenda</a>
+                        <a href="#manifesto" class="hover:text-black transition-colors px-3 py-2 rounded-md text-sm font-bold uppercase tracking-wider">Manifesto</a>
+                        <a href="#contact" class="hover:text-black transition-colors px-3 py-2 rounded-md text-sm font-bold uppercase tracking-wider">Submit Request</a>
+                        <a href="#contact" class="bg-brand-maroon hover:bg-red-900 text-white px-6 py-2 rounded-full font-bold transition-transform transform hover:scale-105 shadow-md">Support</a>
+                    </div>
+                </div>
+                <!-- Mobile menu button -->
+                <div class="-mr-2 flex md:hidden">
+                    <button type="button" aria-label="Toggle mobile navigation" aria-controls="mobile-menu" aria-expanded="false" onclick="const m=document.getElementById('mobile-menu');m.classList.toggle('hidden');this.setAttribute('aria-expanded',String(!m.classList.contains('hidden')))" class="inline-flex items-center justify-center p-2 rounded-md text-brand-maroon hover:text-black hover:bg-yellow-300 focus:outline-none">
+                        <i class="fas fa-bars text-2xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!-- Mobile Menu -->
+        <div class="hidden md:hidden bg-brand-yellow border-t border-yellow-400" id="mobile-menu">
+            <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3 text-center">
+                <a href="#about" class="text-brand-maroon font-bold block px-3 py-3 rounded-md text-base">About</a>
+                <a href="#agenda" class="text-brand-maroon font-bold block px-3 py-3 rounded-md text-base">Agenda</a>
+                <a href="#manifesto" class="text-brand-maroon font-bold block px-3 py-3 rounded-md text-base">Manifesto</a>
+                <a href="#contact" class="text-brand-maroon font-bold block px-3 py-3 rounded-md text-base">Submit Request</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section (Maroon Theme) -->
+    <header class="relative pt-32 pb-20 lg:pt-40 lg:pb-28 bg-brand-maroon text-white clip-diagonal overflow-hidden">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="flex flex-col lg:flex-row items-center justify-between gap-12">
+                
+                <!-- Text Content -->
+                <div class="lg:w-1/2 text-center lg:text-left">
+                    <div class="inline-block bg-brand-yellow/20 border border-brand-yellow text-brand-yellow px-4 py-1 rounded-full font-semibold text-sm mb-6 uppercase tracking-wider">
+                        AMUSU Elections 2026
+                    </div>
+                    <h1 class="font-heading text-5xl sm:text-6xl lg:text-7xl font-extrabold tracking-tight mb-6">
+                        PROGRESS.<br>
+                        <span class="text-brand-yellow">INTEGRITY.</span><br>
+                        ACTION.
+                    </h1>
+                    <p class="text-xl sm:text-2xl text-slate-200 font-medium mb-8">
+                        Elect <strong class="text-white">ZUBAIR</strong> for Cabinet Member.<br> A bold voice for a better tomorrow.
+                    </p>
+                    <div class="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
+                        <a href="#manifesto" class="bg-brand-yellow hover:bg-yellow-500 text-brand-maroon px-8 py-4 rounded-full font-bold text-lg transition-transform transform hover:-translate-y-1 shadow-[0_0_15px_rgba(255,215,0,0.4)]">
+                            Read the Manifesto <i class="fas fa-arrow-right ml-2"></i>
+                        </a>
+                        <a href="#contact" class="bg-transparent border-2 border-brand-yellow hover:bg-brand-yellow hover:text-brand-maroon text-brand-yellow px-8 py-4 rounded-full font-bold text-lg transition-colors">
+                            Submit a Problem
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Candidate Photo -->
+                <div class="lg:w-1/2 relative">
+                    <div class="relative w-72 h-72 sm:w-96 sm:h-96 mx-auto">
+                        <!-- Yellow background circle offset -->
+                        <div class="absolute inset-0 bg-brand-yellow rounded-full transform translate-x-4 translate-y-4"></div>
+                        
+                        <!-- Main Photo Profile -->
+                        <img src="assets/zubair-photo.jpg" alt="Zubair Candidate Photo" onerror="this.style.display='none';document.getElementById('photo-placeholder').classList.remove('hidden')" class="relative w-full h-full object-cover rounded-full border-4 border-white shadow-2xl z-10 bg-white" />
+                        <div id="photo-placeholder" class="hidden relative w-full h-full rounded-full border-4 border-white shadow-2xl z-10 bg-white text-brand-maroon flex flex-col items-center justify-center text-center p-5">
+                            <span class="font-heading font-extrabold text-8xl text-gray-300">Z</span>
+                            <strong class="text-xs tracking-widest">ADD ZUBAIR'S PHOTO</strong>
+                            <small class="text-xs text-gray-500 mt-2">Save the portrait as<br>assets/zubair-photo.jpg</small>
+                        </div>
+                        
+                        <!-- Badge -->
+                        <div class="absolute bottom-0 right-0 bg-white text-brand-maroon font-bold px-6 py-3 rounded-full shadow-xl z-20 border-2 border-brand-yellow transform rotate-[-5deg]">
+                            #VoteForZubair
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- About Section -->
+    <section id="about" class="py-20 bg-white">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 class="font-heading text-4xl font-extrabold text-brand-maroon mb-6">Meet Zubair</h2>
+            <div class="w-24 h-1 bg-brand-yellow mx-auto mb-10 rounded"></div>
+            
+            <p class="text-xl text-slate-700 leading-relaxed mb-6 font-medium">
+                "Aligarh Muslim University has been my home since 2009. Having completed my secondary and senior secondary education right here at AMU, I intimately understand the heartbeat of this campus, its glorious traditions, and the daily challenges we face as students."
+            </p>
+            <p class="text-lg text-slate-600 leading-relaxed mb-8">
+                I believe that the AMUSU is a vital platform to champion the rights, welfare, and intellectual growth of every student. My vision is rooted in transparency, inclusive dialogue, and relentless advocacy for our campus community.
+            </p>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mt-12">
+                <div class="p-6 bg-slate-50 rounded-2xl border border-slate-200 hover:shadow-lg transition-shadow">
+                    <div class="text-brand-maroon text-4xl mb-4"><i class="fas fa-bullhorn"></i></div>
+                    <h3 class="font-bold text-xl mb-2 text-brand-maroon">Strong Voice</h3>
+                    <p class="text-slate-600">Amplifying student concerns to the administration without fear or compromise.</p>
+                </div>
+                <div class="p-6 bg-slate-50 rounded-2xl border border-slate-200 hover:shadow-lg transition-shadow">
+                    <div class="text-brand-maroon text-4xl mb-4"><i class="fas fa-handshake"></i></div>
+                    <h3 class="font-bold text-xl mb-2 text-brand-maroon">Unity & Integrity</h3>
+                    <p class="text-slate-600">Fostering brotherhood and standing firm on democratic principles.</p>
+                </div>
+                <div class="p-6 bg-slate-50 rounded-2xl border border-slate-200 hover:shadow-lg transition-shadow">
+                    <div class="text-brand-maroon text-4xl mb-4"><i class="fas fa-tasks"></i></div>
+                    <h3 class="font-bold text-xl mb-2 text-brand-maroon">Action Driven</h3>
+                    <p class="text-slate-600">Moving beyond promises to deliver tangible results for campus life.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Agenda Section (short, at-a-glance points) -->
+    <section id="agenda" class="py-20 bg-brand-maroon text-white">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 lg:grid-cols-5 gap-12">
+            <div class="lg:col-span-2">
+                <p class="text-brand-yellow font-bold uppercase tracking-widest text-sm mb-4">The Agenda</p>
+                <h2 class="font-heading text-5xl font-extrabold leading-tight mb-6">Eight Priorities.<br><span class="text-brand-yellow italic">Real work.</span></h2>
+                <p class="text-slate-200 text-lg mb-8">Structured, systemic reforms — not hollow promises. Tap any point to see what it means.</p>
+                <a href="#manifesto" class="inline-block text-brand-yellow font-bold uppercase tracking-wider border-b-2 border-brand-yellow pb-1 hover:text-white hover:border-white transition-colors">Read the full manifesto <i class="fas fa-arrow-down ml-1"></i></a>
+            </div>
+            <div class="lg:col-span-3 divide-y divide-white/20 border-y border-white/20">
+                <details class="group py-5">
+                    <summary class="flex items-center gap-5 cursor-pointer list-none"><span class="text-brand-yellow font-bold text-sm">01</span><span class="font-heading font-extrabold text-xl sm:text-2xl uppercase flex-1">Helpdesk &amp; Helpline</span><i class="fas fa-plus text-brand-yellow group-open:rotate-45 transition-transform"></i></summary>
+                    <p class="mt-3 pl-10 text-slate-200">A map, helpdesk and photocopy facility at the Controller Office — no more running table-to-table.</p>
+                </details>
+                <details class="group py-5">
+                    <summary class="flex items-center gap-5 cursor-pointer list-none"><span class="text-brand-yellow font-bold text-sm">02</span><span class="font-heading font-extrabold text-xl sm:text-2xl uppercase flex-1">Timely Convocation</span><i class="fas fa-plus text-brand-yellow group-open:rotate-45 transition-transform"></i></summary>
+                    <p class="mt-3 pl-10 text-slate-200">Clear convocations and medals pending since 2018, then hold them on time every year.</p>
+                </details>
+                <details class="group py-5">
+                    <summary class="flex items-center gap-5 cursor-pointer list-none"><span class="text-brand-yellow font-bold text-sm">03</span><span class="font-heading font-extrabold text-xl sm:text-2xl uppercase flex-1">Campus Wi-Fi</span><i class="fas fa-plus text-brand-yellow group-open:rotate-45 transition-transform"></i></summary>
+                    <p class="mt-3 pl-10 text-slate-200">Upgraded Wi-Fi that works on mobile — no reliance on personal hotspots.</p>
+                </details>
+                <details class="group py-5">
+                    <summary class="flex items-center gap-5 cursor-pointer list-none"><span class="text-brand-yellow font-bold text-sm">04</span><span class="font-heading font-extrabold text-xl sm:text-2xl uppercase flex-1">Labs &amp; Libraries</span><i class="fas fa-plus text-brand-yellow group-open:rotate-45 transition-transform"></i></summary>
+                    <p class="mt-3 pl-10 text-slate-200">New and repaired labs, Seminar Library access for first-years, and library orientation for new students.</p>
+                </details>
+                <details class="group py-5">
+                    <summary class="flex items-center gap-5 cursor-pointer list-none"><span class="text-brand-yellow font-bold text-sm">05</span><span class="font-heading font-extrabold text-xl sm:text-2xl uppercase flex-1">Women's Safety &amp; Dignity</span><i class="fas fa-plus text-brand-yellow group-open:rotate-45 transition-transform"></i></summary>
+                    <p class="mt-3 pl-10 text-slate-200">Safe e-rickshaw/shuttle transit, female staff for checks at the library, and upgraded Girls' Common Rooms.</p>
+                </details>
+                <details class="group py-5">
+                    <summary class="flex items-center gap-5 cursor-pointer list-none"><span class="text-brand-yellow font-bold text-sm">06</span><span class="font-heading font-extrabold text-xl sm:text-2xl uppercase flex-1">Fair Canteen Rates</span><i class="fas fa-plus text-brand-yellow group-open:rotate-45 transition-transform"></i></summary>
+                    <p class="mt-3 pl-10 text-slate-200">One affordable, enforced rate list across all university canteens.</p>
+                </details>
+                <details class="group py-5">
+                    <summary class="flex items-center gap-5 cursor-pointer list-none"><span class="text-brand-yellow font-bold text-sm">07</span><span class="font-heading font-extrabold text-xl sm:text-2xl uppercase flex-1">Safer Campus</span><i class="fas fa-plus text-brand-yellow group-open:rotate-45 transition-transform"></i></summary>
+                    <p class="mt-3 pl-10 text-slate-200">Proper street lighting and a humane, effective stray dog management plan.</p>
+                </details>
+                <details class="group py-5">
+                    <summary class="flex items-center gap-5 cursor-pointer list-none"><span class="text-brand-yellow font-bold text-sm">08</span><span class="font-heading font-extrabold text-xl sm:text-2xl uppercase flex-1">Accountability</span><i class="fas fa-plus text-brand-yellow group-open:rotate-45 transition-transform"></i></summary>
+                    <p class="mt-3 pl-10 text-slate-200">A Public Promise Tracker, monthly open houses and an AMU Student Parliament.</p>
+                </details>
+            </div>
+        </div>
+    </section>
+
+    <!-- Manifesto Section -->
+    <section id="manifesto" class="py-20 bg-slate-50">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="font-heading text-4xl font-extrabold text-brand-maroon mb-4">The Manifesto</h2>
+                <div class="w-24 h-1 bg-brand-yellow mx-auto mb-6 rounded"></div>
+                <p class="text-sm font-bold uppercase tracking-widest text-brand-maroon">Students' Charter for Systemic Reform</p>
+            </div>
+
+            <div class="max-w-3xl mx-auto text-center mb-12">
+                <p class="text-xl text-brand-maroon font-semibold italic mb-2">"सिर्फ हंगामा खड़ा करना मेरा मक़सद नहीं,<br>मेरी कोशिश है कि ये सूरत बदलनी चाहिए।"</p>
+                <p class="text-lg text-slate-700 italic mb-6">"Be the change that you wish to see in the world." — M.K. Gandhi</p>
+                <p class="text-lg text-slate-600 leading-relaxed">My dear fellow Aligarians, I stand before you not merely as a candidate, but as a student who has lived every facet of this great institution since 2009. From my schooling at ABK to pursuing my master's degree, I understand our collective struggles. I am contesting for the post of Cabinet Member with a vision that moves beyond hollow promises to deliver structured, systemic reforms.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
+                <!-- Point 1 -->
+                <div class="bg-white p-8 rounded-2xl shadow-sm border-l-4 border-brand-maroon hover:shadow-md transition-shadow">
+                    <h3 class="font-heading font-bold text-2xl text-brand-maroon mb-3">1. Administrative Convenience &amp; Helpdesk</h3>
+                    <ul class="text-slate-600 space-y-2 list-disc list-inside">
+                        <li><strong>Controller Office Navigability:</strong> A clear map and a dedicated Helpdesk at the Controller Office to prevent students from running table-to-table.</li>
+                        <li><strong>Active Helpline:</strong> Accessible, manned helpline numbers during working hours for immediate administrative support.</li>
+                        <li><strong>On-Site Photocopy Facility:</strong> A photocopy/Xerox provision directly at the Controller Office for emergency document needs.</li>
+                        <li><strong>Departmental Access:</strong> Bonafide students get access to departmental photocopy machines during working hours.</li>
+                    </ul>
+                </div>
+                
+                <!-- Point 2 -->
+                <div class="bg-white p-8 rounded-2xl shadow-sm border-l-4 border-brand-yellow hover:shadow-md transition-shadow">
+                    <h3 class="font-heading font-bold text-2xl text-brand-maroon mb-3">2. Academic Excellence &amp; Infrastructure</h3>
+                    <ul class="text-slate-600 space-y-2 list-disc list-inside">
+                        <li><strong>Timely Convocation &amp; Medals:</strong> Resolve pending Convocations and medal distributions stalled since 2018, ensuring punctual annual ceremonies.</li>
+                        <li><strong>Campus Wi-Fi Overhaul:</strong> Upgrade Wi-Fi infrastructure for seamless mobile accessibility, eliminating reliance on personal hotspots.</li>
+                        <li><strong>Laboratory Rejuvenation:</strong> Construct vital lab spaces (e.g., Geology, Education) and upgrade non-functional labs in the Faculty of Science.</li>
+                        <li><strong>Library Inclusivity &amp; Orientation:</strong> Abolish restrictions on first-year students' access to Seminar Libraries, and run user-awareness programs for new students to maximize Maulana Azad Library's utility.</li>
+                    </ul>
+                </div>
+
+                <!-- Point 3 -->
+                <div class="bg-white p-8 rounded-2xl shadow-sm border-l-4 border-brand-yellow hover:shadow-md transition-shadow">
+                    <h3 class="font-heading font-bold text-2xl text-brand-maroon mb-3">3. Women's Welfare, Safety &amp; Empowerment</h3>
+                    <ul class="text-slate-600 space-y-2 list-disc list-inside">
+                        <li><strong>Accessible Campus Transit:</strong> Subsidized, secure e-rickshaw and shuttle services connecting Girls' Hostels to departments and inter-faculty transit points.</li>
+                        <li><strong>Dignity at Maulana Azad Library:</strong> Immediate deployment of female staff for the frisking and bag-checking of female students at the library exit.</li>
+                        <li><strong>Upgradation of Girls' Common Rooms (GCR):</strong> Hygienic, well-equipped Girls' Common Rooms across all faculties and departments.</li>
+                    </ul>
+                </div>
+
+                <!-- Point 4 -->
+                <div class="bg-white p-8 rounded-2xl shadow-sm border-l-4 border-brand-maroon hover:shadow-md transition-shadow">
+                    <h3 class="font-heading font-bold text-2xl text-brand-maroon mb-3">4. Campus Life, Hygiene &amp; Accountability</h3>
+                    <ul class="text-slate-600 space-y-2 list-disc list-inside">
+                        <li><strong>Standardized Canteen Rates:</strong> A universal, affordable rate list strictly enforced across all university canteens to prevent arbitrary pricing.</li>
+                        <li><strong>Campus Safety &amp; Environment:</strong> Adequate street lighting and a humane, effective stray dog management protocol.</li>
+                        <li><strong>Student Union Accountability:</strong> A 'Public Promise Tracker', continuous grievance follow-up, monthly open houses, and an AMU Student Parliament to keep the union answerable to its voters.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Voter Reminder -->
+            <div class="bg-yellow-50 border-l-4 border-brand-yellow rounded-2xl p-6 mb-12 text-center">
+                <h3 class="font-heading font-extrabold text-xl text-brand-maroon mb-2"><i class="fas fa-triangle-exclamation mr-2"></i>Important Reminder to All Voters</h3>
+                <p class="text-slate-700 font-semibold">There are <strong>10 Cabinet Members</strong> to be elected. You MUST cast all 10 votes for your ballot paper to be valid.<br>Make every single vote count toward building a proactive and capable team.</p>
+            </div>
+
+            <!-- Download PDF Button -->
+            <div class="text-center bg-brand-maroon text-white rounded-3xl p-10 relative overflow-hidden">
+                <div class="absolute inset-0 opacity-20 bg-brand-yellow" style="clip-path: circle(50% at 90% 10%);"></div>
+                <div class="relative z-10">
+                    <h3 class="font-heading text-3xl font-bold mb-4">Want the Full Details?</h3>
+                    <p class="mb-8 text-slate-200">Download the complete, comprehensive manifesto in PDF format to read offline or share with friends.</p>
+                    
+                    <a href="https://drive.google.com/uc?id=1fuvbmt7KPmkIGWOare8hVr8jUbYiO9Dv" target="_blank" rel="noopener" class="inline-flex items-center justify-center bg-brand-yellow hover:bg-yellow-500 text-brand-maroon px-8 py-4 rounded-full font-bold text-lg transition-transform transform hover:scale-105 shadow-lg">
+                        <i class="fas fa-file-pdf mr-3 text-2xl"></i> Download PDF Manifesto
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action / Submit a Problem (Formspree Integration) -->
+    <section id="contact" class="py-20 bg-white">
+        <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 class="font-heading text-4xl font-extrabold text-brand-maroon mb-6">Submit a Request or Problem</h2>
+            <p class="text-lg text-slate-600 mb-4">This campaign is for the students. If you are facing a problem that is not listed in our manifesto, please let us know!</p>
+            <p class="text-sm text-brand-maroon font-semibold mb-10">Fill out the form below and it will be sent directly to Zubair's team.</p>
+            
+            <!-- FORMSPREE INTEGRATION: Replace YOUR_FORM_ID with the ID you get from Formspree.io -->
+            <form action="https://formspree.io/f/xqppqzln" method="POST" class="space-y-5 max-w-md mx-auto text-left bg-slate-50 p-8 rounded-2xl shadow-sm border border-slate-200">
+                
+                <div>
+                    <label class="block text-sm font-bold text-brand-maroon mb-1">Full Name</label>
+                    <input type="text" name="name" required class="w-full px-4 py-3 rounded-lg border border-slate-300 focus:ring-2 focus:ring-brand-yellow focus:border-brand-yellow outline-none transition-all" placeholder="Your Name">
+                </div>
+                
+                <div>
+                    <label class="block text-sm font-bold text-brand-maroon mb-1">WhatsApp / Contact Number</label>
+                    <input type="tel" name="phone" required class="w-full px-4 py-3 rounded-lg border border-slate-300 focus:ring-2 focus:ring-brand-yellow focus:border-brand-yellow outline-none transition-all" placeholder="+91 00000 00000">
+                </div>
+                
+                <div>
+                    <label class="block text-sm font-bold text-brand-maroon mb-1">Hall / Department</label>
+                    <input type="text" name="department" class="w-full px-4 py-3 rounded-lg border border-slate-300 focus:ring-2 focus:ring-brand-yellow focus:border-brand-yellow outline-none transition-all" placeholder="E.g., SS Hall South">
+                </div>
+
+                <div>
+                    <label class="block text-sm font-bold text-brand-maroon mb-1">Your Problem / Request</label>
+                    <textarea name="problem" rows="4" required class="w-full px-4 py-3 rounded-lg border border-slate-300 focus:ring-2 focus:ring-brand-yellow focus:border-brand-yellow outline-none transition-all resize-none" placeholder="Tell us about the issue you are facing..."></textarea>
+                </div>
+                
+                <!-- Anti-spam honeypot for Formspree (hidden from users) -->
+                <input type="text" name="_gotcha" style="display:none" />
+
+                <button type="submit" class="w-full bg-brand-maroon hover:bg-red-900 text-white px-6 py-4 rounded-lg font-bold text-lg transition-colors mt-4 shadow-md">
+                    Send Request to Zubair
+                </button>
+            </form>
+
+            <!-- Direct contact -->
+            <div class="mt-12 flex flex-col sm:flex-row gap-4 justify-center">
+                <a href="https://www.instagram.com/zubair_for_cabinet?rpxt=ajR0emM3ZnAyZTQ1" target="_blank" rel="noopener" class="inline-flex items-center justify-center gap-3 bg-brand-maroon hover:bg-red-900 text-white px-6 py-4 rounded-full font-bold transition-colors shadow-md">
+                    <i class="fab fa-instagram text-2xl text-brand-yellow"></i> @zubair_for_cabinet
+                </a>
+                <a href="tel:+917037201513" class="inline-flex items-center justify-center gap-3 bg-brand-yellow hover:bg-yellow-500 text-brand-maroon px-6 py-4 rounded-full font-bold transition-colors shadow-md">
+                    <i class="fas fa-phone text-xl"></i> +91-7037201513
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-brand-maroon text-slate-300 py-12 border-t-4 border-brand-yellow">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row justify-between items-center gap-6">
+            <div class="text-center md:text-left">
+                <a href="#" class="font-heading font-extrabold text-3xl tracking-wider text-brand-yellow block mb-2">ZUBAIR</a>
+                <p class="text-sm font-medium">Candidate for Cabinet Member, AMUSU 2026</p>
+            </div>
+            
+            <div class="flex flex-col sm:flex-row items-center gap-4 sm:gap-8 font-semibold">
+                <a href="https://www.instagram.com/zubair_for_cabinet?rpxt=ajR0emM3ZnAyZTQ1" target="_blank" rel="noopener" class="flex items-center gap-2 text-brand-yellow hover:text-white transition-colors">
+                    <i class="fab fa-instagram text-2xl"></i> @zubair_for_cabinet
+                </a>
+                <a href="tel:+917037201513" class="flex items-center gap-2 text-brand-yellow hover:text-white transition-colors">
+                    <i class="fas fa-phone text-xl"></i> +91-7037201513
+                </a>
+            </div>
+        </div>
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mt-8 text-center text-sm text-slate-400">
+            &copy; 2026 Zubair Campaign. All rights reserved. Built for AMUSU.
+        </div>
+    </footer>
+
+<script>
+  document.querySelectorAll('#mobile-menu a').forEach(function(link){link.addEventListener('click',function(){document.getElementById('mobile-menu').classList.add('hidden');var b=document.querySelector('button[aria-controls="mobile-menu"]');if(b)b.setAttribute('aria-expanded','false');});});
+</script>
+</body>
+</html>
