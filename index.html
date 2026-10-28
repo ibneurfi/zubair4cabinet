@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Zubair for AMUSU Cabinet Member</title>
+    <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+    <link rel="shortcut icon" href="assets/favicon.svg">
     <!-- Tailwind CSS for styling -->
     <script src="https://cdn.tailwindcss.com"></script>
     <!-- Google Fonts for typography -->
@@ -59,7 +61,7 @@
                 </div>
                 <!-- Mobile menu button -->
                 <div class="-mr-2 flex md:hidden">
-                    <button type="button" aria-label="Toggle mobile navigation" aria-controls="mobile-menu" aria-expanded="false" onclick="const m=document.getElementById('mobile-menu');m.classList.toggle('hidden');this.setAttribute('aria-expanded',String(!m.classList.contains('hidden')))" class="inline-flex items-center justify-center p-2 rounded-md text-brand-maroon hover:text-black hover:bg-yellow-300 focus:outline-none">
+                    <button type="button" aria-label="Toggle mobile navigation" aria-controls="mobile-menu" aria-expanded="false" onclick="const m=document.getElementById('mobile-menu');m.classList.toggle('hidden');this.setAttribute('aria-expanded', m.classList.contains('hidden') ? 'false' : 'true')">
                         <i class="fas fa-bars text-2xl"></i>
                     </button>
                 </div>
@@ -95,7 +97,7 @@
                         Elect <strong class="text-white">ZUBAIR</strong> for Cabinet Member.<br> A bold voice for a better tomorrow.
                     </p>
                     <div class="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
-                        <a href="#manifesto" class="bg-brand-yellow hover:bg-yellow-500 text-brand-maroon px-8 py-4 rounded-full font-bold text-lg transition-transform transform hover:-translate-y-1 shadow-[0_0_15px_rgba(255,215,0,0.4)]">
+                        <a href="#manifesto" class="bg-brand-yellow hover:bg-yellow-500 text-brand-maroon px-8 py-4 rounded-full font-bold text-lg transition-transform transform hover:-translate-y-1 shadow-md">
                             Read the Manifesto <i class="fas fa-arrow-right ml-2"></i>
                         </a>
                         <a href="#contact" class="bg-transparent border-2 border-brand-yellow hover:bg-brand-yellow hover:text-brand-maroon text-brand-yellow px-8 py-4 rounded-full font-bold text-lg transition-colors">
@@ -111,8 +113,8 @@
                         <div class="absolute inset-0 bg-brand-yellow rounded-full transform translate-x-4 translate-y-4"></div>
                         
                         <!-- Main Photo Profile -->
-                        <img src="assets/zubair-photo.png" alt="Zubair Candidate Photo" onerror="this.style.display='none';document.getElementById('photo-placeholder').classList.remove('hidden')" class="relative w-full h-full object-cover rounded-full border-4 border-white shadow-2xl z-10 bg-white" />
-                        <div id="photo-placeholder" class="hidden relative w-full h-full rounded-full border-4 border-white shadow-2xl z-10 bg-white text-brand-maroon flex flex-col items-center justify-center text-center p-5">
+                        <img src="assets/zubair-photo.png" alt="Zubair Candidate Photo" onerror="this.style.display='none';document.getElementById('photo-placeholder').classList.remove('hidden')" class="relative w-full h-full object-cover rounded-full border-4 border-white shadow-2xl z-10">
+                        <div id="photo-placeholder" class="hidden relative w-full h-full rounded-full border-4 border-white shadow-2xl z-10 bg-white text-brand-maroon flex flex-col items-center justify-center">
                             <span class="font-heading font-extrabold text-8xl text-gray-300">Z</span>
                             <strong class="text-xs tracking-widest">ADD ZUBAIR'S PHOTO</strong>
                             <small class="text-xs text-gray-500 mt-2">Save the portrait as<br>assets/zubair-photo.png</small>
@@ -135,10 +137,10 @@
             <div class="w-24 h-1 bg-brand-yellow mx-auto mb-10 rounded"></div>
             
             <p class="text-xl text-slate-700 leading-relaxed mb-6 font-medium">
-                "Aligarh Muslim University has been my home since 2009. Having completed my secondary and senior secondary education right here at AMU, I intimately understand the heartbeat of this campus, its glorious traditions, and the daily challenges we face as students."
+                "Aligarh Muslim University has been my home since 2009. Having completed my secondary and senior secondary education right here at AMU, I intimately understand the heartbeat of this campus and the real challenges students face every day."
             </p>
             <p class="text-lg text-slate-600 leading-relaxed mb-8">
-                I believe that the AMUSU is a vital platform to champion the rights, welfare, and intellectual growth of every student. My vision is rooted in transparency, inclusive dialogue, and relentless advocacy for our campus community.
+                I believe that the AMUSU is a vital platform to champion the rights, welfare, and intellectual growth of every student. My vision is rooted in transparency, inclusive dialogue, and results that improve daily life on campus.
             </p>
             
             <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mt-12">
@@ -149,7 +151,7 @@
                 </div>
                 <div class="p-6 bg-slate-50 rounded-2xl border border-slate-200 hover:shadow-lg transition-shadow">
                     <div class="text-brand-maroon text-4xl mb-4"><i class="fas fa-handshake"></i></div>
-                    <h3 class="font-bold text-xl mb-2 text-brand-maroon">Unity & Integrity</h3>
+                    <h3 class="font-bold text-xl mb-2 text-brand-maroon">Unity &amp; Integrity</h3>
                     <p class="text-slate-600">Fostering brotherhood and standing firm on democratic principles.</p>
                 </div>
                 <div class="p-6 bg-slate-50 rounded-2xl border border-slate-200 hover:shadow-lg transition-shadow">
@@ -168,39 +170,39 @@
                 <p class="text-brand-yellow font-bold uppercase tracking-widest text-sm mb-4">The Agenda</p>
                 <h2 class="font-heading text-5xl font-extrabold leading-tight mb-6">Eight Priorities.<br><span class="text-brand-yellow italic">Real work.</span></h2>
                 <p class="text-slate-200 text-lg mb-8">Structured, systemic reforms — not hollow promises. Tap any point to see what it means.</p>
-                <a href="#manifesto" class="inline-block text-brand-yellow font-bold uppercase tracking-wider border-b-2 border-brand-yellow pb-1 hover:text-white hover:border-white transition-colors">Read the full manifesto <i class="fas fa-arrow-down ml-1"></i></a>
+                <a href="#manifesto" class="inline-block text-brand-yellow font-bold uppercase tracking-wider border-b-2 border-brand-yellow pb-1 hover:text-white hover:border-white transition-colors">View Manifesto</a>
             </div>
             <div class="lg:col-span-3 divide-y divide-white/20 border-y border-white/20">
                 <details class="group py-5">
-                    <summary class="flex items-center gap-5 cursor-pointer list-none"><span class="text-brand-yellow font-bold text-sm">01</span><span class="font-heading font-extrabold text-xl sm:text-2xl uppercase flex-1">Helpdesk &amp; Helpline</span><i class="fas fa-plus text-brand-yellow group-open:rotate-45 transition-transform"></i></summary>
+                    <summary class="flex items-center gap-5 cursor-pointer list-none"><span class="text-brand-yellow font-bold text-sm">01</span><span class="font-heading font-extrabold text-xl sm:text-2xl">Controller Office Reform</span><span class="ml-auto text-brand-yellow text-xl transition-transform group-open:rotate-90"><i class="fas fa-chevron-right"></i></span></summary>
                     <p class="mt-3 pl-10 text-slate-200">A map, helpdesk and photocopy facility at the Controller Office — no more running table-to-table.</p>
                 </details>
                 <details class="group py-5">
-                    <summary class="flex items-center gap-5 cursor-pointer list-none"><span class="text-brand-yellow font-bold text-sm">02</span><span class="font-heading font-extrabold text-xl sm:text-2xl uppercase flex-1">Timely Convocation</span><i class="fas fa-plus text-brand-yellow group-open:rotate-45 transition-transform"></i></summary>
+                    <summary class="flex items-center gap-5 cursor-pointer list-none"><span class="text-brand-yellow font-bold text-sm">02</span><span class="font-heading font-extrabold text-xl sm:text-2xl">Convocations &amp; Medals</span><span class="ml-auto text-brand-yellow text-xl transition-transform group-open:rotate-90"><i class="fas fa-chevron-right"></i></span></summary>
                     <p class="mt-3 pl-10 text-slate-200">Clear convocations and medals pending since 2018, then hold them on time every year.</p>
                 </details>
                 <details class="group py-5">
-                    <summary class="flex items-center gap-5 cursor-pointer list-none"><span class="text-brand-yellow font-bold text-sm">03</span><span class="font-heading font-extrabold text-xl sm:text-2xl uppercase flex-1">Campus Wi-Fi</span><i class="fas fa-plus text-brand-yellow group-open:rotate-45 transition-transform"></i></summary>
+                    <summary class="flex items-center gap-5 cursor-pointer list-none"><span class="text-brand-yellow font-bold text-sm">03</span><span class="font-heading font-extrabold text-xl sm:text-2xl">Campus Wi-Fi</span><span class="ml-auto text-brand-yellow text-xl transition-transform group-open:rotate-90"><i class="fas fa-chevron-right"></i></span></summary>
                     <p class="mt-3 pl-10 text-slate-200">Upgraded Wi-Fi that works on mobile — no reliance on personal hotspots.</p>
                 </details>
                 <details class="group py-5">
-                    <summary class="flex items-center gap-5 cursor-pointer list-none"><span class="text-brand-yellow font-bold text-sm">04</span><span class="font-heading font-extrabold text-xl sm:text-2xl uppercase flex-1">Labs &amp; Libraries</span><i class="fas fa-plus text-brand-yellow group-open:rotate-45 transition-transform"></i></summary>
+                    <summary class="flex items-center gap-5 cursor-pointer list-none"><span class="text-brand-yellow font-bold text-sm">04</span><span class="font-heading font-extrabold text-xl sm:text-2xl">Labs &amp; Libraries</span><span class="ml-auto text-brand-yellow text-xl transition-transform group-open:rotate-90"><i class="fas fa-chevron-right"></i></span></summary>
                     <p class="mt-3 pl-10 text-slate-200">New and repaired labs, Seminar Library access for first-years, and library orientation for new students.</p>
                 </details>
                 <details class="group py-5">
-                    <summary class="flex items-center gap-5 cursor-pointer list-none"><span class="text-brand-yellow font-bold text-sm">05</span><span class="font-heading font-extrabold text-xl sm:text-2xl uppercase flex-1">Women's Safety &amp; Dignity</span><i class="fas fa-plus text-brand-yellow group-open:rotate-45 transition-transform"></i></summary>
+                    <summary class="flex items-center gap-5 cursor-pointer list-none"><span class="text-brand-yellow font-bold text-sm">05</span><span class="font-heading font-extrabold text-xl sm:text-2xl">Women’s Safety</span><span class="ml-auto text-brand-yellow text-xl transition-transform group-open:rotate-90"><i class="fas fa-chevron-right"></i></span></summary>
                     <p class="mt-3 pl-10 text-slate-200">Safe e-rickshaw/shuttle transit, female staff for checks at the library, and upgraded Girls' Common Rooms.</p>
                 </details>
                 <details class="group py-5">
-                    <summary class="flex items-center gap-5 cursor-pointer list-none"><span class="text-brand-yellow font-bold text-sm">06</span><span class="font-heading font-extrabold text-xl sm:text-2xl uppercase flex-1">Fair Canteen Rates</span><i class="fas fa-plus text-brand-yellow group-open:rotate-45 transition-transform"></i></summary>
+                    <summary class="flex items-center gap-5 cursor-pointer list-none"><span class="text-brand-yellow font-bold text-sm">06</span><span class="font-heading font-extrabold text-xl sm:text-2xl">Affordable Canteens</span><span class="ml-auto text-brand-yellow text-xl transition-transform group-open:rotate-90"><i class="fas fa-chevron-right"></i></span></summary>
                     <p class="mt-3 pl-10 text-slate-200">One affordable, enforced rate list across all university canteens.</p>
                 </details>
                 <details class="group py-5">
-                    <summary class="flex items-center gap-5 cursor-pointer list-none"><span class="text-brand-yellow font-bold text-sm">07</span><span class="font-heading font-extrabold text-xl sm:text-2xl uppercase flex-1">Safer Campus</span><i class="fas fa-plus text-brand-yellow group-open:rotate-45 transition-transform"></i></summary>
+                    <summary class="flex items-center gap-5 cursor-pointer list-none"><span class="text-brand-yellow font-bold text-sm">07</span><span class="font-heading font-extrabold text-xl sm:text-2xl">Campus Hygiene</span><span class="ml-auto text-brand-yellow text-xl transition-transform group-open:rotate-90"><i class="fas fa-chevron-right"></i></span></summary>
                     <p class="mt-3 pl-10 text-slate-200">Proper street lighting and a humane, effective stray dog management plan.</p>
                 </details>
                 <details class="group py-5">
-                    <summary class="flex items-center gap-5 cursor-pointer list-none"><span class="text-brand-yellow font-bold text-sm">08</span><span class="font-heading font-extrabold text-xl sm:text-2xl uppercase flex-1">Accountability</span><i class="fas fa-plus text-brand-yellow group-open:rotate-45 transition-transform"></i></summary>
+                    <summary class="flex items-center gap-5 cursor-pointer list-none"><span class="text-brand-yellow font-bold text-sm">08</span><span class="font-heading font-extrabold text-xl sm:text-2xl">Accountability</span><span class="ml-auto text-brand-yellow text-xl transition-transform group-open:rotate-90"><i class="fas fa-chevron-right"></i></span></summary>
                     <p class="mt-3 pl-10 text-slate-200">A Public Promise Tracker, monthly open houses and an AMU Student Parliament.</p>
                 </details>
             </div>
@@ -217,9 +219,9 @@
             </div>
 
             <div class="max-w-3xl mx-auto text-center mb-12">
-                <p class="text-xl text-brand-maroon font-semibold italic mb-2">"सिर्फ हंगामा खड़ा करना मेरा मक़सद नहीं,<br>मेरी कोशिश है कि ये सूरत बदलनी चाहिए।"</p>
+                <p class="text-xl text-brand-maroon font-semibold italic mb-2">"सिर्फ हंगामा खड़ा करना मेरा मक़सद नहीं,<br>मेरा मक़सद लोगों की ज़रूरतों को समझना है।"</p>
                 <p class="text-lg text-slate-700 italic mb-6">"Be the change that you wish to see in the world." — M.K. Gandhi</p>
-                <p class="text-lg text-slate-600 leading-relaxed">My dear fellow Aligarians, I stand before you not merely as a candidate, but as a student who has lived every facet of this great institution since 2009. From my schooling at ABK to pursuing my master's degree, I understand our collective struggles. I am contesting for the post of Cabinet Member with a vision that moves beyond hollow promises to deliver structured, systemic reforms.</p>
+                <p class="text-lg text-slate-600 leading-relaxed">My dear fellow Aligarians, I stand before you not merely as a candidate, but as a student who has lived every facet of this great institution. My mission is to turn concerns into action and promises into measurable results.</p>
             </div>
 
             <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
@@ -241,7 +243,7 @@
                         <li><strong>Timely Convocation &amp; Medals:</strong> Resolve pending Convocations and medal distributions stalled since 2018, ensuring punctual annual ceremonies.</li>
                         <li><strong>Campus Wi-Fi Overhaul:</strong> Upgrade Wi-Fi infrastructure for seamless mobile accessibility, eliminating reliance on personal hotspots.</li>
                         <li><strong>Laboratory Rejuvenation:</strong> Construct vital lab spaces (e.g., Geology, Education) and upgrade non-functional labs in the Faculty of Science.</li>
-                        <li><strong>Library Inclusivity &amp; Orientation:</strong> Abolish restrictions on first-year students' access to Seminar Libraries, and run user-awareness programs for new students to maximize Maulana Azad Library's utility.</li>
+                        <li><strong>Library Inclusivity &amp; Orientation:</strong> Abolish restrictions on first-year students' access to Seminar Libraries, and run user-awareness programs for new students.</li>
                     </ul>
                 </div>
 
@@ -261,7 +263,7 @@
                     <ul class="text-slate-600 space-y-2 list-disc list-inside">
                         <li><strong>Standardized Canteen Rates:</strong> A universal, affordable rate list strictly enforced across all university canteens to prevent arbitrary pricing.</li>
                         <li><strong>Campus Safety &amp; Environment:</strong> Adequate street lighting and a humane, effective stray dog management protocol.</li>
-                        <li><strong>Student Union Accountability:</strong> A 'Public Promise Tracker', continuous grievance follow-up, monthly open houses, and an AMU Student Parliament to keep the union answerable to its voters.</li>
+                        <li><strong>Student Union Accountability:</strong> A 'Public Promise Tracker', continuous grievance follow-up, monthly open houses, and an AMU Student Parliament to keep the university accountable.</li>
                     </ul>
                 </div>
             </div>
@@ -269,7 +271,7 @@
             <!-- Voter Reminder -->
             <div class="bg-yellow-50 border-l-4 border-brand-yellow rounded-2xl p-6 mb-12 text-center">
                 <h3 class="font-heading font-extrabold text-xl text-brand-maroon mb-2"><i class="fas fa-triangle-exclamation mr-2"></i>Important Reminder to All Voters</h3>
-                <p class="text-slate-700 font-semibold">There are <strong>10 Cabinet Members</strong> to be elected. You MUST cast all 10 votes for your ballot paper to be valid.<br>Make every single vote count toward building a proactive and capable team.</p>
+                <p class="text-slate-700 font-semibold">There are <strong>10 Cabinet Members</strong> to be elected. You MUST cast all 10 votes for your ballot paper to be valid.<br>Make every single vote count.</p>
             </div>
 
             <!-- Download PDF Button -->
@@ -279,7 +281,7 @@
                     <h3 class="font-heading text-3xl font-bold mb-4">Want the Full Details?</h3>
                     <p class="mb-8 text-slate-200">Download the complete, comprehensive manifesto in PDF format to read offline or share with friends.</p>
                     
-                    <a href="https://drive.google.com/uc?id=1fuvbmt7KPmkIGWOare8hVr8jUbYiO9Dv" target="_blank" rel="noopener" class="inline-flex items-center justify-center bg-brand-yellow hover:bg-yellow-500 text-brand-maroon px-8 py-4 rounded-full font-bold text-lg transition-transform transform hover:scale-105 shadow-lg">
+                    <a href="https://drive.google.com/uc?id=1fuvbmt7KPmkIGWOare8hVr8jUbYiO9Dv" target="_blank" rel="noopener" class="inline-flex items-center justify-center bg-brand-yellow hover:bg-yellow-500 text-brand-maroon px-8 py-4 rounded-full font-bold text-lg transition-colors">
                         <i class="fas fa-file-pdf mr-3 text-2xl"></i> Download PDF Manifesto
                     </a>
                 </div>
@@ -299,22 +301,22 @@
                 
                 <div>
                     <label class="block text-sm font-bold text-brand-maroon mb-1">Full Name</label>
-                    <input type="text" name="name" required class="w-full px-4 py-3 rounded-lg border border-slate-300 focus:ring-2 focus:ring-brand-yellow focus:border-brand-yellow outline-none transition-all" placeholder="Your Name">
+                    <input type="text" name="name" required class="w-full px-4 py-3 rounded-lg border border-slate-300 focus:ring-2 focus:ring-brand-yellow focus:border-brand-yellow outline-none transition">
                 </div>
                 
                 <div>
                     <label class="block text-sm font-bold text-brand-maroon mb-1">WhatsApp / Contact Number</label>
-                    <input type="tel" name="phone" required class="w-full px-4 py-3 rounded-lg border border-slate-300 focus:ring-2 focus:ring-brand-yellow focus:border-brand-yellow outline-none transition-all" placeholder="+91 00000 00000">
+                    <input type="tel" name="phone" required class="w-full px-4 py-3 rounded-lg border border-slate-300 focus:ring-2 focus:ring-brand-yellow focus:border-brand-yellow outline-none transition">
                 </div>
                 
                 <div>
                     <label class="block text-sm font-bold text-brand-maroon mb-1">Hall / Department</label>
-                    <input type="text" name="department" class="w-full px-4 py-3 rounded-lg border border-slate-300 focus:ring-2 focus:ring-brand-yellow focus:border-brand-yellow outline-none transition-all" placeholder="E.g., SS Hall South">
+                    <input type="text" name="department" class="w-full px-4 py-3 rounded-lg border border-slate-300 focus:ring-2 focus:ring-brand-yellow focus:border-brand-yellow outline-none transition">
                 </div>
 
                 <div>
                     <label class="block text-sm font-bold text-brand-maroon mb-1">Your Problem / Request</label>
-                    <textarea name="problem" rows="4" required class="w-full px-4 py-3 rounded-lg border border-slate-300 focus:ring-2 focus:ring-brand-yellow focus:border-brand-yellow outline-none transition-all resize-none" placeholder="Tell us about the issue you are facing..."></textarea>
+                    <textarea name="problem" rows="4" required class="w-full px-4 py-3 rounded-lg border border-slate-300 focus:ring-2 focus:ring-brand-yellow focus:border-brand-yellow outline-none transition"></textarea>
                 </div>
                 
                 <!-- Anti-spam honeypot for Formspree (hidden from users) -->
@@ -327,10 +329,10 @@
 
             <!-- Direct contact -->
             <div class="mt-12 flex flex-col sm:flex-row gap-4 justify-center">
-                <a href="https://www.instagram.com/zubair_for_cabinet?rpxt=ajR0emM3ZnAyZTQ1" target="_blank" rel="noopener" class="inline-flex items-center justify-center gap-3 bg-brand-maroon hover:bg-red-900 text-white px-6 py-4 rounded-full font-bold transition-colors shadow-md">
+                <a href="https://www.instagram.com/zubair_for_cabinet?rpxt=ajR0emM3ZnAyZTQ1" target="_blank" rel="noopener" class="inline-flex items-center justify-center gap-3 bg-brand-maroon hover:bg-red-900 text-white px-6 py-4 rounded-full font-bold transition-colors">
                     <i class="fab fa-instagram text-2xl text-brand-yellow"></i> @zubair_for_cabinet
                 </a>
-                <a href="tel:+917037201513" class="inline-flex items-center justify-center gap-3 bg-brand-yellow hover:bg-yellow-500 text-brand-maroon px-6 py-4 rounded-full font-bold transition-colors shadow-md">
+                <a href="tel:+917037201513" class="inline-flex items-center justify-center gap-3 bg-brand-yellow hover:bg-yellow-500 text-brand-maroon px-6 py-4 rounded-full font-bold transition-colors">
                     <i class="fas fa-phone text-xl"></i> +91-7037201513
                 </a>
             </div>
@@ -360,7 +362,7 @@
     </footer>
 
 <script>
-  document.querySelectorAll('#mobile-menu a').forEach(function(link){link.addEventListener('click',function(){document.getElementById('mobile-menu').classList.add('hidden');var b=document.querySelector('button[aria-controls="mobile-menu"]');if(b)b.setAttribute('aria-expanded','false');});});
+  document.querySelectorAll('#mobile-menu a').forEach(function(link){link.addEventListener('click',function(){document.getElementById('mobile-menu').classList.add('hidden');var b=document.querySelector('[aria-controls="mobile-menu"]');if(b){b.setAttribute('aria-expanded','false');}});});
 </script>
 </body>
 </html>
